@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Style for the custom radio button */
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.53); /* Border color */
+  border-bottom: 1px solid black; /* Border color */
+  border-radius: 4px;
+  background-color: #fff;
+  color: black; /* Text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style for the checked custom radio button */
+input[type="radio"]:checked + label {
+  background-color: #ec671b; /* Background color when selected */
+  color: #fff; /* Text color when selected */
+}
+
+/* Hover effect for the custom radio button */
+input[type="radio"] + label:hover {
+  background-color: #ec671b;
+  color: #fff;
+}
+
+/* Style for custom text input */
+.text-input {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.53);
+  border-radius: 4px;
+  background-color: #fff;
+  color: black;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for custom text input */
+.text-input:hover,
+.text-input:focus {
+  border-color: #3498db;
+  background-color: #f0f0f0;
+}
+
+/* Style for number class */
+
+/* Style for row class */
+.row {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.check {
+  font-size: x-small;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #ec671b;
+  max-width: 70%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  padding: 10px 50px;
+}
+
+form {
+  padding: 30px;
+}
+
+/* Style for the textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Hover effect for the textarea */
+textarea:hover,
+textarea:focus {
+  border-color: #3498db;
+}
