@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="../index.html">Powrót</a>
+    <header>
+      <h1>Poproś o wycenę</h1>
+      <h3>
+        Wypełnij formularz w celu uzyskania wyceny dostosowanej do twoich
+        potrzeb
+      </h3>
+      <br />
+      <h2>Flex / Flock</h2>
+    </header>
+
+    <form action="">
+      <div class="row">
+        <div class="inside">
+          <span class="number">0</span>
+          <span class="title">Pochodzenie</span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="a3extra"
+              name="pochodzenie"
+              value="a3extra"
+              checked
+            />
+            <label for="a3extra"><span>a3 extra</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="powierzona"
+              name="pochodzenie"
+              value="powierzona"
+            />
+            <label for="powierzona"><span>powierzona</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="inside">
+          <span class="number">1</span>
+          <span class="title">Rodzaj odzieży</span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="tshirt"
+              name="rodzaj"
+              value="tshirt"
+              checked
+            />
+            <label for="tshirt"><span>t-shirt/longesleeve</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="koszula"
+              name="rodzaj"
+              value="koszula"
+            />
+            <label for="koszula"><span>koszula</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="bluza"
+              name="rodzaj"
+              value="bluza"
+            />
+            <label for="bluza"><span>bluza</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="inside">
+          <span class="number">2</span>
+          <span class="title">Typ folii</span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="flex"
+              name="folia"
+              value="flex"
+              checked
+            />
+            <label for="flex"><span>flex</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="flock"
+              name="folia"
+              value="flock"
+            />
+            <label for="flock"><span>flock</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="inside">
+          <span class="number">3</span>
+          <span class="title"
+            >Powierzchnia prostokątnego obrysu pierwszego nadruku w cm2</span
+          >
+          <div class="content">
+            <input
+              class="run"
+              placeholder="100"
+              id="powierzchnia"
+              name="powierzchnia"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">4</span>
+          <span class="title">Liczba miejsc nadruku</span>
+          <div class="content">
+            <select name="liczba" id="liczba">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">5</span>
+          <span class="title"
+            >Czy cały nakład będzie drukowany z jednego wzoru graficznego?
+          </span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="wzortak"
+              name="wzor"
+              value="wzortak"
+              checked
+            />
+            <label for="wzortak"><span>Tak</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="wzornie"
+              name="wzor"
+              value="wzornie"
+            />
+            <label for="wzornie"><span>Nie</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">6</span>
+          <span class="title"
+            >Składanie jednostkowe i pakowanie w woreczki</span
+          >
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="tak"
+              name="woreczki"
+              value="tak"
+              checked
+            />
+            <label for="tak"><span>tak</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="nie"
+              name="woreczki"
+              value="nie"
+            />
+            <label for="nie"><span>nie</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">7</span>
+          <span class="title">Dostawa</span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="osobisty"
+              name="dostawa"
+              value="osobisty"
+              checked
+            />
+            <label for="osobisty"><span>Odbiór osobisty</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="kurier"
+              name="dostawa"
+              value="kurier"
+            />
+            <label for="kurier"><span>Dostawa kurierem</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">8</span>
+          <span class="title">Złożoność projektu nadruku? </span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="standardowa"
+              name="zlozonosc"
+              value="standardowa"
+              checked
+            />
+            <label for="standardowa"><span>standardowa</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="zlozona"
+              name="zlozonosc"
+              value="zlozona"
+            />
+            <label for="zlozona"><span>zlozona</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">9</span>
+          <span class="title">Czy folia jest dostępna?</span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="dosteptak"
+              name="dostepnosc"
+              value="dosteptak"
+              checked
+            />
+            <label for="dosteptak"><span>tak</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="dostepnie"
+              name="dostepnosc"
+              value="dostepnie"
+            />
+            <label for="dostepnie"><span>nie</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">9.5</span>
+          <span class="title">Rodzaj folii flex? </span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="c26"
+              name="cc9"
+              value="wsp"
+              checked
+            />
+            <label for="c26"><span>Flex klasyczny (standardowa)</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c27"
+              name="cc9"
+              value="sublistop"
+            />
+            <label for="c27"><span>Flex sublistop (na poliester)</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c28"
+              name="cc9"
+              value="chromaflex"
+            />
+            <label for="c28"
+              ><span
+                >Ultima Film (imitacja sitodruku, cienka i elastyczna)</span
+              ></label
+            >
+            <input
+              class="run"
+              type="radio"
+              id="c29"
+              name="cc9"
+              value="metalizowany"
+            />
+            <label for="c29"><span>Flex metalizowany</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c30"
+              name="cc9"
+              value="brokatowy"
+            />
+            <label for="c30"><span>Flex brokatowy</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c31"
+              name="cc9"
+              value="odblaskowy_kolory"
+            />
+            <label for="c31"><span>Flex odblaskowy (kolory)</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c32"
+              name="cc9"
+              value="odblaskowy_srebrny"
+            />
+            <label for="c32"
+              ><span>Flex odblaskowy srebrny (służby ratownicze)</span></label
+            >
+            <input
+              class="run"
+              type="radio"
+              id="c49"
+              name="cc9"
+              value="fluorescencyjny"
+            />
+            <label for="c49"><span>Flex fluorescencyjny</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c50"
+              name="cc9"
+              value="sparkle"
+            />
+            <label for="c50"><span>Flex effect sparkle</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c51"
+              name="cc9"
+              value="rainbow"
+            />
+            <label for="c51"><span>Flex effect rainbow</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c52"
+              name="cc9"
+              value="spectrum"
+            />
+            <label for="c52"><span>Flex effect spectrum</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c53"
+              name="cc9"
+              value="lakierowany"
+            />
+            <label for="c53"><span>Flex lakierowany</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c54"
+              name="cc9"
+              value="duoflex"
+            />
+            <label for="c54"><span>Duoflex</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c55"
+              name="cc9"
+              value="silicone"
+            />
+            <label for="c55"><span>Flex silicone 3D</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c56"
+              name="cc9"
+              value="puchnacy"
+            />
+            <label for="c56"><span>Flex puchnący 3D</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="c57"
+              name="cc9"
+              value="pozostale"
+            />
+            <label for="c57"><span>Pozostale folie flex</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">9.6</span>
+          <span class="title"
+            >Dostosowanie wielkości znakowania do rozmiaru odzieży?
+          </span>
+          <div class="content">
+            <input
+              class="run"
+              type="radio"
+              id="wielkosctak"
+              name="wielkoscdost"
+              value="wielkosctak"
+              checked
+            />
+            <label for="wielkosctak"><span>tak</span></label>
+            <input
+              class="run"
+              type="radio"
+              id="wielkoscnie"
+              name="wielkoscdost"
+              value="wielkoscnie"
+            />
+            <label for="wielkoscnie"><span>nie</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="insdie">
+          <span class="number">10</span>
+          <label for="textarea" class="title">Dodatkowe informacje</label>
+          <br />
+          <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="inside">
+          <span class="number">11</span>
+          <span class="title">Informacje osobowe</span>
+          <div class="content">
+            <label for="imie"><span> imie</span></label
+            ><br />
+            <input class="run" type="text" id="imie" name="imie" required />
+            <br />
+            <label for="nazwisko"><span>nazwisko</span></label
+            ><br />
+            <input
+              class="run"
+              type="text"
+              id="nazwisko"
+              name="nazwisko"
+              required
+            />
+            <br />
+            <label for="email"><span>email</span></label
+            ><br />
+            <input class="run" type="email" id="email" name="email" required />
+
+            <div class="regulamin">
+              <input type="checkbox" name="check" id="check" required />
+              <label for="check" class="check"
+                >Wyrażam zgodę na przetwarzanie..</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Wyślij formularz</button>
+    </form>
+  </body>
+</html>
